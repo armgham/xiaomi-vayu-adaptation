@@ -48,10 +48,10 @@ package() {
     #install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/performance.conf" -t "${pkgdir}/etc/modules-load.d/"
     #install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/connectivity.conf" -t "${pkgdir}/etc/modules-load.d/"
 
-    #mkdir -p "${pkgdir}/boot/"
-    #install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/boot.img" -t "${pkgdir}/boot/"
-    #install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/dtbo.img" -t "${pkgdir}/boot/"
-    #install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/vbmeta.img" -t "${pkgdir}/boot/"
+    mkdir -p "${pkgdir}/boot/"
+    install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/boot.img" -t "${pkgdir}/boot/"
+    install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/dtbo.img" -t "${pkgdir}/boot/"
+    install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/vbmeta.img" -t "${pkgdir}/boot/"
 
     #mkdir -p "${pkgdir}/usr/lib/systemd/system/"
     #install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/brightness.service" "${pkgdir}/usr/lib/systemd/system/"
